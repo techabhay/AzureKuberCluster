@@ -2,7 +2,7 @@ apiVersion: skaffold/v1
 kind: Config
 build:
   artifacts:
-    - image: skaffold-spring-boot-example
+    - image: azure-kuber-demo
       jib: {}
   local: {}
 

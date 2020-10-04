@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: spring-boot-example
+  name: azure-kuber-demo
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: spring-boot-example
+      app: azure-kuber-demo
   template:
     metadata:
       labels:
-        app: spring-boot-example
+        app: azure-kuber-demo
     spec:
       containers:
-        - name: spring-boot-example
-          image: skaffold-spring-boot-example
+        - name: azure-kuber-demo
+          image: azure-kuber-demo
           ports:
             - containerPort: 8080
